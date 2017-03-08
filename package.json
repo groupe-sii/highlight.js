@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git://github.com/isagalaev/highlight.js.git"
   },
-  "main": "./lib/index.js",
+  "main": "./src/highlight.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/",
     "test-browser": "./node_modules/.bin/mocha test/browser/"
