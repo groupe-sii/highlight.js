@@ -3954,6 +3954,27 @@ in stdenv.mkDerivation rec {
     </div>
     
     
+    <div class="common">
+      <h2>Bash</h2>
+      <pre><code class="npm">#!/bin/bash
+
+###### CONFIG
+ACCEPTED_HOSTS=&quot;/root/.hag_accepted.conf&quot;
+BE_VERBOSE=false
+
+if [ &quot;$UID&quot; -ne 0 ]
+then
+ echo &quot;Superuser rights required&quot;
+ exit 2
+fi
+
+genApacheConf(){
+ echo -e &quot;# Host ${HOME_DIR}$1/$2 :&quot;
+}
+</code></pre>
+    </div>
+    
+    
     <div >
       <h2>NSIS</h2>
       <pre><code class="nsis">/*
