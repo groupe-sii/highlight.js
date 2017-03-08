@@ -20,10 +20,11 @@
     "type": "git",
     "url": "git://github.com/isagalaev/highlight.js.git"
   },
-  "main": "./src/highlight.js",
+  "main": "./build/highlight.pack.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/",
-    "test-browser": "./node_modules/.bin/mocha test/browser/"
+    "test-browser": "./node_modules/.bin/mocha test/browser/",
+    "prepublish": "node tools/build.js"
   },
   "engines": {
     "node": "*"
