@@ -23,8 +23,7 @@
   "main": "./build/highlight.pack.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/",
-    "test-browser": "./node_modules/.bin/mocha test/browser/",
-    "prepublish": "node tools/build.js"
+    "test-browser": "./node_modules/.bin/mocha test/browser/"
   },
   "engines": {
     "node": "*"
