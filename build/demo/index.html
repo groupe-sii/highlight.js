@@ -845,6 +845,27 @@ class Counter(count=0) {
     </div>
     
     
+    <div class="common">
+      <h2>Clea</h2>
+      <pre><code class="clea">#!/bin/bash
+
+###### CONFIG
+ACCEPTED_HOSTS=&quot;/root/.hag_accepted.conf&quot;
+BE_VERBOSE=false
+
+if [ &quot;$UID&quot; -ne 0 ]
+then
+ echo &quot;Superuser rights required&quot;
+ exit 2
+fi
+
+genApacheConf(){
+ echo -e &quot;# Host ${HOME_DIR}$1/$2 :&quot;
+}
+</code></pre>
+    </div>
+    
+    
     <div class="functional">
       <h2>Clean</h2>
       <pre><code class="clean">module fsieve
